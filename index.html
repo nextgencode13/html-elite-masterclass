@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The HTML Elite Masterclass: 2026 Edition</title>
+    <meta name="description"
+        content="The ultimate HTML masterclass covering everything from basic structure to semantic HTML and forms. Become a Web Elite today.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="seo-thumbnail.jpg">
+
+    <!-- Open Graph / Facebook / WhatsApp / Instagram / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nextgencode13.github.io/html-elite-masterclass/">
+    <meta property="og:title" content="The HTML Elite Masterclass: 2026 Edition">
+    <meta property="og:description"
+        content="Unlock the power of the web with this complete HTML guide. Perfect for beginners and developers alike.">
+    <meta property="og:image" content="https://nextgencode13.github.io/html-elite-masterclass/seo-thumbnail.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nextgencode13.github.io/html-elite-masterclass/">
+    <meta property="twitter:title" content="The HTML Elite Masterclass: 2026 Edition">
+    <meta property="twitter:description"
+        content="Unlock the power of the web with this complete HTML guide. Perfect for beginners and developers alike.">
+    <meta property="twitter:image" content="https://nextgencode13.github.io/html-elite-masterclass/seo-thumbnail.jpg">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+    <div class="progress-container">
+        <div id="progress-bar" class="progress-bar"></div>
+    </div>
+
+    <nav id="navbar">
+        <a href="#" class="logo">NextGen <span>HTML Elite Masterclass</span></a>
+        <div class="nav-links">
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>The HTML Elite Masterclass</h1>
+        <p>The ultimate guide to building the modern web. From absolute beginner to semantic master. Build your
+            foundation with confidence.</p>
+        <a href="#introduction" class="cta-button">Start Learning</a>
+    </header>
+
+    <div class="container">
+        <aside>
+            <div class="glass" style="padding: 1.5rem;">
+                <p class="toc-title">Table of Contents</p>
+                <ul class="toc-list">
+                    <li><a href="#introduction">Chapter 1 --> What is HTML?</a></li>
+                    <li><a href="#basics">Chapter 2 --> Elements & Tags</a></li>
+                    <li><a href="#text">Chapter 3 --> Working with Text</a></li>
+                    <li><a href="#lists">Chapter 4 --> Mastering Lists</a></li>
+                    <li><a href="#links">Chapter 5 --> Links & Images</a></li>
+                    <li><a href="#forms">Chapter 6 --> Forms & Inputs</a></li>
+                    <li><a href="#semantic">Chapter 7 --> Semantic HTML5</a></li>
+                    <li><a href="#media">Chapter 8 --> Multimedia</a></li>
+                    <li><a href="#advanced">Chapter 9 --> Advanced Concepts</a></li>
+                    <li><a href="#interview">Chapter 10 --> Interview Q&A</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main>
+            <section id="introduction">
+                <h2>Chapter 1 --> What is HTML?</h2>
+                <p>HTML (HyperText Markup Language) is the standard markup language for documents designed to be
+                    displayed in a web browser. It defines the structure of web content.</p>
+                <div class="glass" style="padding: 1.5rem; margin-top: 1rem;">
+                    <p><strong>Think of it like:</strong> The skeleton of a building. It provides the structure, while
+                        CSS provides the paint and JS provides the elevators and lighting.</p>
+                </div>
+                <div style="margin: 2rem 0; text-align: center;">
+                    <img src="html-overview.png" alt="HTML/CSS/JS Building Analogy"
+                        style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--neon-glow); transition: var(--transition);"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <h3>The Browser's Job</h3>
+                <p>When you open a website, your browser reads the HTML from top to bottom. It creates something called
+                    the <strong>DOM (Document Object Model)</strong>, which is a tree-like map of your page that
+                    JavaScript can interact with later.</p>
+
+                <div class="challenge-box">
+                    <span class="badge">CHALLENGE #1</span>
+                    <h3>The Grand Architect</h3>
+                    <p>If HTML is the 'Skeleton', what is the name of the 'Living Map' the browser builds to understand
+                        your code?</p>
+                    <div class="reward-reveal" data-secret="The DOM (Document Object Model)!">Click to Reveal Selection
+                    </div>
+                </div>
+            </section>
+
+            <section id="basics">
+                <span class="badge">CORE CONCEPT</span>
+                <h2>Chapter 2 --> Elements & Tags</h2>
+                <h3>The Boilerplate Structure</h3>
+                <p>Every HTML document must follow a specific boilerplate structure to be valid.</p>
+                <div style="margin: 2rem 0; text-align: center;">
+                    <img src="img/chapter-2.png" alt="HTML Boilerplate Structure"
+                        style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--neon-glow); transition: var(--transition);"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div class="code-container">
+                    <div class="code-header">index.html</div>
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Content goes here --&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+                <h3>Live Result:</h3>
+                <div class="live-preview">
+                    <h1>Hello World!</h1>
+                </div>
+                <h3>Key Parts:</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;!DOCTYPE&gt;</code></td>
+                            <td>Tells the browser this is an HTML5 document.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;html&gt;</code></td>
+                            <td>The root element of the page.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;head&gt;</code></td>
+                            <td>Contains metadata (title, link to CSS, meta tags).</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;title&gt;</code></td>
+                            <td>Defines the title shown in the browser's tab.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;body&gt;</code></td>
+                            <td>Contains the visible content of the page.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <hr style="margin: 4rem 0; border: none; border-top: 1px solid var(--border);">
+
+                <h3>Elements & Tags</h3>
+                <p>To build with HTML, you must understand its two building blocks: <strong>Tags</strong> and
+                    <strong>Elements</strong>.
+                </p>
+                <div style="margin: 2rem 0; text-align: center;">
+                    <img src="img/chapter-2.0.png" alt="Elements and Tags Breakdown"
+                        style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--neon-glow); transition: var(--transition);"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+
+                <div class="glass" style="padding: 1.5rem; margin-top: 1rem; border-left: 4px solid var(--accent);">
+                    <p><strong>The Rule of Three:</strong></p>
+                    <ul style="margin-top: 0.5rem; list-style-type: none;">
+                        <li style="margin-bottom: 0.5rem;">🏷️ <strong>Tag:</strong> The individual markers like
+                            <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code>.
+                        </li>
+                        <li style="margin-bottom: 0.5rem;">🧱 <strong>Element:</strong> The entire package: <em>Start
+                                Tag + Content + End Tag</em>.</li>
+                        <li>⚙️ <strong>Attribute:</strong> Extra info inside the tag, like <code>class="hero"</code>.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="code-container" style="margin-top: 2rem;">
+                    <div class="code-header">Anatomy of an Element</div>
+                    <pre><code>&lt;p class="greeting"&gt;Hello World!&lt;/p&gt;
+|__| |____________| |__________| |__| 
+Tag   Attribute      Content      End Tag</code></pre>
+                </div>
+
+                <h3>Void Elements (Self-Closing)</h3>
+                <p>Some tags don't need a closing tag because they don't hold any text content. These are called
+                    <strong>Void Elements</strong>.
+                </p>
+                <div class="code-container">
+                    <pre><code>&lt;img src="img.jpg"&gt;  &lt;!-- Image Tag --&gt;
+&lt;br&gt;                &lt;!-- Line Break --&gt;
+&lt;hr&gt;                &lt;!-- Horizontal Rule --&gt;</code></pre>
+                </div>
+
+                <div class="challenge-box" style="border-color: #10b981;">
+                    <span class="badge" style="background: #10b981;">FLASH QUIZ</span>
+                    <h3>Void vs container</h3>
+                    <p>Does the <code>&lt;br&gt;</code> tag need a closing <code>&lt;/br&gt;</code> tag?</p>
+                    <div class="reward-reveal" data-secret="No! It is a Void Element.">Click to Check Knowledge 🧠</div>
+                </div>
+
+                <div class="glass" style="padding: 1.5rem; border-left: 4px solid var(--primary); margin-top: 2rem;">
+                    <h4>Understanding Attributes</h4>
+                    <p>Tags can have <strong>Attributes</strong> that provide extra info. They always look like:
+                        <code>name="value"</code>.
+                    </p>
+                    <p>Example: <code>&lt;html lang="en"&gt;</code> tells the browser the language is English.</p>
+                </div>
+
+                <div class="challenge-box" style="border-color: #8b5cf6;">
+                    <span class="badge" style="background: #8b5cf6;">FLASH QUIZ</span>
+                    <h3>The Tab Title</h3>
+                    <p>Which tag defines the text that appears on the browser's tab/title bar?</p>
+                    <div class="reward-reveal" data-secret="The title tag!">Click to Check
+                        Knowledge 🧠</div>
+                </div>
+            </section>
+            </section>
+
+            <section id="text">
+                <h2>Chapter 3 --> Working with Text</h2>
+                <p>Headings help structure your content hierarchically. Use <code>&lt;h1&gt;</code> only once per page!
+                </p>
+                <div style="margin: 2rem 0; text-align: center;">
+                    <img src="img/chapter-3.png" alt="Working with Text Hierarchy"
+                        style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--neon-glow); transition: var(--transition);"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div class="code-container">
+                    <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;strong&gt;Bold Text&lt;/strong&gt;
+&lt;em&gt;Italicized Text&lt;/em&gt;</code></pre>
+                </div>
+                <h3>Live Result:</h3>
+                <div class="live-preview">
+                    <h1 style="color:#0f172a">Main Heading</h1>
+                    <h2 style="color:#0f172a">Subheading</h2>
+                    <p>This is a paragraph of text.</p>
+                    <strong>Bold Text</strong> | <em>Italicized Text</em>
+                </div>
+                <div class="glass" style="padding: 1rem; margin-top: 1rem; border-left: 4px solid #f59e0b;">
+                    <p><strong>Common Mistake:</strong> Don't use 10 different <code>&lt;h1&gt;</code> tags. It confuses
+                        Screen Readers and Search Engines. Stick to a clean 1-2-3-4 hierarchy!</p>
+                </div>
+
+                <div class="challenge-box" style="border-color: #ec4899;">
+                    <span class="badge" style="background: #ec4899;">FLASH QUIZ</span>
+                    <h3>Hierarchy Hero</h3>
+                    <p>How many times should you ideally use an <code>&lt;h1&gt;</code> tag on a single page?</p>
+                    <div class="reward-reveal" data-secret="Only once! It is the primary heading.">Click to Check
+                        Knowledge 🧠</div>
+                </div>
+            </section>
+
+            <section id="lists">
+                <h2>Chapter 4 --> Mastering Lists</h2>
+                <p>Lists are the heartbeat of web navigation. They help group related items cleanly.</p>
+                <div style="margin: 2rem 0; text-align: center;">
+                    <img src="img/chapter-4.png" alt="HTML Lists Example"
+                        style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--neon-glow); transition: var(--transition);"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div class="code-container">
+                    <pre><code>&lt;!-- Unordered List (Bullet points) --&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Ordered List (Numbered) --&gt;
+&lt;ol&gt;
+    &lt;li&gt;First Step&lt;/li&gt;
+    &lt;li&gt;Second Step&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+                </div>
+                <h3>Live Result:</h3>
+                <div class="live-preview">
+                    <p style="font-weight:bold">Unordered:</p>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                    </ul>
+                    <p style="font-weight:bold; margin-top:1rem">Ordered:</p>
+                    <ol>
+                        <li>First Step</li>
+                        <li>Second Step</li>
+                    </ol>
+                </div>
+                <h3>Nested Lists</h3>
+                <p>You can put a list <em>inside</em> another list to create sub-menus!</p>
+                <div class="code-container">
+                    <pre><code>&lt;ul&gt;
+  &lt;li&gt;Fruits
+    &lt;ul&gt;
+      &lt;li&gt;Apple&lt;/li&gt;
+      &lt;li&gt;Banana&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                </div>
+                <h3>Live Result:</h3>
+                <div class="live-preview">
+                    <ul>
+                        <li>Fruits
+                            <ul>
+                                <li>Apple</li>
+                                <li>Banana</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="links">
+                <h2>Chapter 5 --> Links & Images</h2>
+                <p>Connectivity is what makes the web "HyperText". Use <code>&lt;a&gt;</code> for links and
+                    <code>&lt;img&gt;</code> for visual content.
+                </p>
+                <div style="margin: 2rem 0; text-align: center;">
+                    <img src="img/chapter-5.png" alt="Links and Images"
+                        style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--neon-glow); transition: var(--transition);"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div class="code-container">
+                    <pre><code>&lt;!-- External Link --&gt;
+&lt;a href="https://google.com" target="_blank"&gt;Visit Google&lt;/a&gt;
+
+&lt;!-- Image --&gt;
+&lt;img src="path/to/image.jpg" alt="Description of image" width="300"&gt;</code></pre>
+                </div>
+                <h3>Live Result:</h3>
+                <div class="live-preview">
+                    <a href="https://google.com" target="_blank" style="color: blue; text-decoration: underline;">Visit
+                        Google</a>
+                    <br><br>
+                    <img src="hero.png" alt="Sample Display" style="width: 100%; max-width: 200px; border-radius: 8px;">
+                    <p><small>(Showing your hero image as a sample)</small></p>
+                </div>
+                <div class="glass" style="padding: 1rem; border-left: 4px solid var(--accent);">
+                    <p><small><strong>SEO TIP:</strong> Always use the <code>alt</code> attribute on images. If the
+                            image is just for decoration, use an empty <code>alt=""</code> so screen readers ignore
+                            it.</small></p>
+                </div>
+                <h3>Relative vs. Absolute Paths</h3>
+                <p><strong>Absolute:</strong> Full URL (e.g., <code>https://google.com/logo.png</code>). Use for
+                    external sites.</p>
+                <p><strong>Relative:</strong> Link to a file inside your own folder (e.g.,
+                    <code>images/photo.jpg</code>). <strong>Best practice</strong> for your own assets!
+                </p>
+
+                <div class="challenge-box" style="border-color: #f59e0b;">
+                    <span class="badge" style="background: #f59e0b;">FLASH QUIZ</span>
+                    <h3>The Invisible Info</h3>
+                    <p>What attribute should you ALWAYS include on an <code>&lt;img&gt;</code> tag for
+                        accessibility/SEO?</p>
+                    <div class="reward-reveal" data-secret="The 'alt' attribute (Alternative Text)!">Click to Check
+                        Knowledge 🧠</div>
+                </div>
+            </section>
+            </section>
+
+            <section id="forms">
+                <h2>Chapter 6 --> Forms & Interactive Elements</h2>
+                <p>Forms are used to collect user input. Modern HTML provides many specialized input types.</p>
+                <div style="margin: 2rem 0; text-align: center;">
+                    <img src="img/chapter-6.png" alt="HTML Forms and Inputs"
+                        style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--neon-glow); transition: var(--transition);"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div class="code-container">
+                    <pre><code>&lt;form action="/submit" method="POST"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name" required&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email"&gt;
+
+    &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+                </div>
+                <h3>Live Result:</h3>
+                <div class="live-preview">
+                    <form onsubmit="event.preventDefault(); alert('Form logic would go to the backend!')">
+                        <div style="margin-bottom: 10px;">
+                            <label style="display:block; font-size: 0.8rem; margin-bottom: 5px;">Your Name:</label>
+                            <input type="text" placeholder="Type name..."
+                                style="padding: 8px; border: 1px solid #ccc; border-radius: 4px; width: 100%;">
+                        </div>
+                        <button type="button"
+                            style="padding: 8px 16px; background: #6366f1; color: white; border: none; border-radius: 4px; cursor: pointer;">Send
+                            Action</button>
+                    </form>
+                </div>
+                <h3>GET vs. POST Methods</h3>
+                <p>When you send a form, the <code>method</code> attribute decides how the data travels:</p>
+                <ul>
+                    <li><strong>GET:</strong> Puts data in the URL (e.g., <code>site.com?name=John</code>). Visible to
+                        everyone!
+                    </li>
+                    <li><strong>POST:</strong> Hides data inside the request body. Safest for passwords and private
+                        info.</li>
+                </ul>
+                <div class="glass" style="padding: 1rem; margin-top: 1.5rem;">
+                    <p><strong>The "Placeholder" Attribute:</strong> Use <code>placeholder="Type name here..."</code> to
+                        show a
+                        faint hint inside the box.</p>
+                </div>
+
+                <div class="challenge-box" style="border-color: #10b981;">
+                    <span class="badge" style="background: #10b981;">FLASH QUIZ</span>
+                    <h3>Safe Data</h3>
+                    <p>Which form 'method' makes data invisible in the URL bar: GET or POST?</p>
+                    <div class="reward-reveal" data-secret="POST! It sends data in the request body.">Click to Check
+                        Knowledge 🧠</div>
+                </div>
+            </section>
+            </section>
+
+            <section id="semantic">
+                <h2>Chapter 7 --> Semantic HTML5</h2>
+                <p>Semantic elements provide meaning to the web browser and search engines about the content of the
+                    elements.</p>
+                <div style="margin: 2rem 0; text-align: center;">
+                    <img src="img/chapter-7.png" alt="Semantic HTML5 Structure"
+                        style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--neon-glow); transition: var(--transition);"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div class="code-container">
+                    <pre><code>&lt;header&gt;Logo and Nav&lt;/header&gt;
+&lt;main&gt;
+    &lt;section&gt;Primary Content&lt;/section&gt;
+    &lt;article&gt;Blog Post or News Item&lt;/article&gt;
+    &lt;aside&gt;Sidebar content&lt;/aside&gt;
+&lt;/main&gt;
+&lt;footer&gt;Copyright & Links&lt;/footer&gt;</code></pre>
+                </div>
+
+                <h3>Live Layout Preview:</h3>
+                <div class="live-preview">
+                    <header
+                        style="background: var(--primary); color: white; padding: 0.8rem; text-align: center; border-radius: 8px; margin-bottom: 1rem; font-weight: bold;">
+                        &lt;header&gt; (Logo & Navigation)
+                    </header>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <main style="flex: 3; min-width: 250px;">
+                            <section
+                                style="background: rgba(99, 102, 241, 0.05); border: 2px dashed var(--primary); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                                <strong>&lt;section&gt;</strong>: Primary Page Content
+                            </section>
+                            <article
+                                style="background: rgba(16, 185, 129, 0.05); border: 2px solid var(--accent); padding: 1rem; border-radius: 8px;">
+                                <strong>&lt;article&gt;</strong>: Independent Blog Post or News Item
+                            </article>
+                        </main>
+                        <aside
+                            style="flex: 1; min-width: 150px; background: rgba(245, 158, 11, 0.05); border: 2px solid #f59e0b; padding: 1rem; border-radius: 8px; font-size: 0.85rem;">
+                            <strong>&lt;aside&gt;</strong>: Sidebar related info (Ads, Links)
+                        </aside>
+                    </div>
+                    <footer
+                        style="background: #1e293b; color: white; padding: 0.8rem; text-align: center; border-radius: 8px; margin-top: 1rem; font-size: 0.8rem;">
+                        &lt;footer&gt; (Copyright, Social Links, Contact)
+                    </footer>
+                </div>
+
+                <div class="challenge-box" style="border-color: #6366f1;">
+                    <span class="badge" style="background: #6366f1;">FLASH QUIZ</span>
+                    <h3>Semantic Superiority</h3>
+                    <p>Why use <code>&lt;main&gt;</code> instead of a generic <code>&lt;div&gt;</code> for content?</p>
+                    <div class="reward-reveal"
+                        data-secret="It helps Screen Readers and SEO bots identify the unique page content instantly.">
+                        Click to Check Knowledge 🧠</div>
+                </div>
+            </section>
+            </section>
+
+            <section id="media">
+                <h2>Chapter 8 --> Multimedia Integration</h2>
+                <p>HTML5 allows you to embed video and audio directly without third-party plugins.</p>
+                <div style="margin: 2rem 0; text-align: center;">
+                    <img src="img/chapter-8.png" alt="Multimedia in HTML5"
+                        style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--neon-glow); transition: var(--transition);"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div class="code-container">
+                    <pre><code>&lt;video controls poster="img.jpg"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;</code></pre>
+                </div>
+                <h3>Live Result:</h3>
+                <div class="live-preview" style="text-align: center;">
+                    <p style="margin-bottom: 10px; font-size: 0.8rem;">(Sample Players - No Source Assigned)</p>
+                    <video controls
+                        style="width: 100%; max-height: 150px; background: #000; border-radius: 8px;"></video>
+                    <audio controls style="width: 100%; margin-top: 10px;"></audio>
+                </div>
+
+                <div class="challenge-box" style="border-color: #ef4444;">
+                    <span class="badge" style="background: #ef4444;">FLASH QUIZ</span>
+                    <h3>The Thumbnails</h3>
+                    <p>What attribute on a <code>&lt;video&gt;</code> tag shows an image before the video is played?</p>
+                    <div class="reward-reveal" data-secret="The 'poster' attribute!">Click to Check Knowledge 🧠</div>
+                </div>
+            </section>
+            </section>
+
+            <section id="advanced">
+                <h2>Chapter 9 --> Advanced Concepts</h2>
+                <p>Once you master the basics, you can dive into specialized HTML elements for graphics and
+                    interactivity.</p>
+
+                <h3>1. SVG (Scalable Vector Graphics)</h3>
+                <p>SVG is an XML-based image format for two-dimensional graphics with support for interactivity and
+                    animation. Unlike images, SVGs don't lose quality when scaled.</p>
+                <div style="margin: 2rem 0; text-align: center;">
+                    <img src="img/chapter-9-1.png" alt="SVG Graphics"
+                        style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--neon-glow); transition: var(--transition);"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div class="code-container">
+                    <pre><code>&lt;svg width="100" height="100"&gt;
+  &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;
+&lt;/svg&gt;</code></pre>
+                </div>
+                <h3>Live Result:</h3>
+                <div class="live-preview" style="display: flex; justify-content: center;">
+                    <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="40" stroke="#10b981" stroke-width="4" fill="#6366f1" />
+                    </svg>
+                </div>
+
+                <h3>2. Canvas API</h3>
+                <p>The <code>&lt;canvas&gt;</code> element is used to draw graphics on the fly via JavaScript (e.g., for
+                    games, graphs, or photo compositions).</p>
+                <div style="margin: 2rem 0; text-align: center;">
+                    <img src="img/chapter-9-2.png" alt="Canvas API"
+                        style="max-width: 100%; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--neon-glow); transition: var(--transition);"
+                        onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+                <div class="code-container">
+                    <pre><code>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+  const c = document.getElementById("myCanvas");
+  const ctx = c.getContext("2d");
+  ctx.moveTo(0, 0);
+  ctx.lineTo(200, 100);
+  ctx.stroke();
+&lt;/script&gt;</code></pre>
+                </div>
+                <h3>Live Result:</h3>
+                <div class="live-preview" style="display: flex; flex-direction: column; align-items: center;">
+                    <canvas id="liveCanvas" width="200" height="100"
+                        style="border: 1px solid #ddd; border-radius: 4px;"></canvas>
+                    <script>
+                        (function () {
+                            const c = document.getElementById("liveCanvas");
+                            if (c) {
+                                const ctx = c.getContext("2d");
+                                ctx.strokeStyle = "#6366f1";
+                                ctx.lineWidth = 3;
+                                ctx.moveTo(0, 0);
+                                ctx.lineTo(200, 100);
+                                ctx.stroke();
+                            }
+                        })();
+                    </script>
+                </div>
+
+                <div class="glass" style="padding: 1.5rem; margin-top: 2rem; border-left: 4px solid var(--primary);">
+                    <h4>Roadmap to Mastery</h4>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                        • Master CSS Layouts (Flexbox/Grid)<br>
+                        • Learn Responsive Design (Media Queries)<br>
+                        • JavaScript Fundamentals<br>
+                        • Web Accessibility (ARIA roles)
+                    </p>
+                </div>
+
+                <div class="challenge-box" style="border-color: var(--primary);">
+                    <span class="badge" style="background: var(--primary);">FLASH QUIZ</span>
+                    <h3>The Location API</h3>
+                    <p>Which HTML5 API allows a website to find the physical coordinates of a user?</p>
+                    <div class="reward-reveal" data-secret="The Geolocation API! (Requires user permission)">Click to
+                        Check Knowledge 🧠</div>
+                </div>
+            </section>
+
+            <!-- Elite MCQ Quiz Section -->
+            <div id="quiz-section" class="quiz-container">
+                <span class="badge">FINAL CHALLENGE</span>
+                <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Elite MCQ Assessment</h2>
+                <p>Score more than 5 to unlock your Official Certification!</p>
+
+                <div id="quiz-content" style="margin-top: 2rem;">
+                    <div id="question-text" class="quiz-question">Loading question...</div>
+                    <div id="options-container" class="quiz-options">
+                        <!-- Options will be injected by JS -->
+                    </div>
+                </div>
+
+                <div class="quiz-footer">
+                    <div id="quiz-progress" class="text-muted">Question 1 of 10</div>
+                    <button id="next-quiz-btn" class="cta-button" style="padding: 0.8rem 2rem; display: none;"
+                        onclick="handleNextQuestion()">Next Question</button>
+                </div>
+            </div>
+
+            <div id="quiz-result" class="quiz-result-feedback">
+                <div id="feedback-title" class="feedback-msg">Checking results...</div>
+                <div id="feedback-score" class="feedback-score">0/10</div>
+                <p id="feedback-description">Something went wrong.</p>
+
+                <div id="quiz-review" class="review-list">
+                    <!-- Review items will be injected by JS -->
+                </div>
+
+                <div id="certificate-unlock-area" style="display:none; margin-top: 2rem;">
+                    <button class="cta-button" onclick="initiateCertificate()">Claim Your Elite Certification
+                        🎓</button>
+                </div>
+                <div id="retry-area" style="display:none; margin-top: 2rem;">
+                    <button class="cta-button" style="background: var(--text-muted); border-color: var(--text-muted);"
+                        onclick="restartQuiz()">Try Again 🔄</button>
+                </div>
+            </div>
+
+            <div id="completion-badge" class="challenge-box"
+                style="text-align: center; border-color: var(--accent); display: none;">
+                <span class="badge" style="background: var(--accent);">COURSE COMPLETE</span>
+                <h3>Congratulations!</h3>
+                <p>You've powered through the Ultimate HTML Crash Course. You're now ready to build the web!</p>
+                <div class="reward-reveal" onclick="initiateCertificate()">Claim Your Elite Certification 🎓</div>
+            </div>
+
+            <section id="interview">
+                <h2>Chapter 10 --> Interview Prep: Ultimate HTML Question Bank</h2>
+                <p>Prepare for your next frontend interview with these 30+ comprehensive HTML questions and detailed
+                    answers.</p>
+
+                <div class="challenge-box" style="border-style: solid; background: rgba(16, 185, 129, 0.05);">
+                    <!-- CATEGORY: BASICS -->
+                    <div style="border-bottom: 2px solid var(--border); margin-bottom: 2rem; padding-bottom: 1rem;">
+                        <span class="badge" style="background: #3b82f6;">LEVEL: BEGINNER</span>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q1: What is HTML?</h3>
+                        <p><strong>Detailed Answer:</strong> HTML stands for HyperText Markup Language. It is the
+                            standard markup language used to create the structure of web pages. It uses "markup" to
+                            annotate text, images, and other content for display in a web browser.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q2: What is the difference between HTML elements and tags?</h3>
+                        <p><strong>Detailed Answer:</strong> An <b>element</b> is the entire unit: the opening tag, the
+                            content, and the closing tag. A <b>tag</b> is just the syntax used to mark the beginning and
+                            end of an element (e.g., <code>&lt;p&gt;</code> is a tag,
+                            <code>&lt;p&gt;Hello&lt;/p&gt;</code> is an element).
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q3: What is the purpose of the &lt;!DOCTYPE html&gt; declaration?</h3>
+                        <p><strong>Detailed Answer:</strong> It is an instruction to the web browser about what version
+                            of HTML the page is written in. <code>&lt;!DOCTYPE html&gt;</code> specifically triggers
+                            "Standards Mode" for HTML5 documents.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q4: What are 'void elements' in HTML?</h3>
+                        <p><strong>Detailed Answer:</strong> Void elements (also called self-closing tags) are elements
+                            that do not contain any content and therefore do not need a closing tag. Examples include
+                            <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>, and
+                            <code>&lt;input&gt;</code>.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q5: What is the purpose of the 'alt' attribute in images?</h3>
+                        <p><strong>Detailed Answer:</strong> The <code>alt</code> attribute provides alternative text if
+                            an image cannot be displayed. It is also essential for accessibility, as screen readers read
+                            this text to visually impaired users.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q6: What is the difference between &lt;div&gt; and &lt;span&gt;?</h3>
+                        <p><strong>Detailed Answer:</strong> <code>&lt;div&gt;</code> is a block-level element (starts
+                            on a new line, takes full width), whereas <code>&lt;span&gt;</code> is an inline element
+                            (stays in line, takes only necessary width).</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q7: What is Semantic HTML?</h3>
+                        <p><strong>Detailed Answer:</strong> Semantic HTML uses tags that clearly describe their meaning
+                            to both the browser and the developer (e.g., <code>&lt;header&gt;</code>,
+                            <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>), rather than generic tags like
+                            <code>&lt;div&gt;</code>.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q8: What is the purpose of the &lt;head&gt; tag?</h3>
+                        <p><strong>Detailed Answer:</strong> It contains metadata about the page, such as the title,
+                            character set, links to CSS/JS files, and SEO descriptions. It is not displayed on the page
+                            itself.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q9: What are HTML attributes?</h3>
+                        <p><strong>Detailed Answer:</strong> Attributes provide additional information about an element.
+                            They are always specified in the opening tag and usually look like <code>name="value"</code>
+                            (e.g., <code>href="google.com"</code>).</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q10: What is the difference between &lt;b&gt; and &lt;strong&gt;?</h3>
+                        <p><strong>Detailed Answer:</strong> <code>&lt;b&gt;</code> is for stylistic bolding, while
+                            <code>&lt;strong&gt;</code> indicates that the text has strong importance, which helps with
+                            SEO and accessibility.
+                        </p>
+                    </div>
+
+                    <!-- CATEGORY: INTERMEDIATE -->
+                    <div
+                        style="border-bottom: 2px solid var(--border); margin-bottom: 2rem; padding-bottom: 1rem; margin-top: 4rem;">
+                        <span class="badge" style="background: #f59e0b;">LEVEL: INTERMEDIATE</span>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q11: What is the purpose of the &lt;label&gt; tag?</h3>
+                        <p><strong>Detailed Answer:</strong> It provides a label for a form element. Clicking the label
+                            also focuses/activates the associated input, improving the user experience and
+                            accessibility.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q12: What is the difference between GET and POST form methods?</h3>
+                        <p><strong>Detailed Answer:</strong> GET appends data to the URL (visible and limited size),
+                            while POST sends data in the request body (private and unlimited size). Use POST for
+                            sensitive info like passwords.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q13: What is the 'target="_blank"' attribute used for?</h3>
+                        <p><strong>Detailed Answer:</strong> It is used in anchor tags (<code>&lt;a&gt;</code>) to open
+                            the linked document in a new browser tab or window.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q14: What are HTML Entities?</h3>
+                        <p><strong>Detailed Answer:</strong> Entities are used to display reserved characters (like
+                            <code>&lt;</code> or <code>&gt;</code>) or special symbols (like <code>&copy;</code>).
+                            Example: <code>&amp;lt;</code> displays as <code>&lt;</code>.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q15: How do you create an Unordered List vs an Ordered List?</h3>
+                        <p><strong>Detailed Answer:</strong> Use <code>&lt;ul&gt;</code> for bullet points and
+                            <code>&lt;ol&gt;</code> for numbered/lettered lists. Individual items always go in
+                            <code>&lt;li&gt;</code> tags.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q16: What is an Iframe?</h3>
+                        <p><strong>Detailed Answer:</strong> An <code>&lt;iframe&gt;</code> is an "Inline Frame" used to
+                            embed another HTML document within the current page (e.g., a YouTube video or Google Map).
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q17: What is the purpose of 'rel="noopener noreferrer"'?</h3>
+                        <p><strong>Detailed Answer:</strong> It is a security best practice when using
+                            <code>target="_blank"</code> to prevent the new page from accessing the original page via
+                            the <code>window.opener</code> object.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q18: What is a nested list?</h3>
+                        <p><strong>Detailed Answer:</strong> It is a list within another list. It's useful for creating
+                            hierarchical structures like navigation menus or table of contents.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q19: What is the difference between &lt;header&gt; and &lt;h1&gt;?</h3>
+                        <p><strong>Detailed Answer:</strong> <code>&lt;header&gt;</code> is a semantic container for
+                            introductory content (logo, nav), while <code>&lt;h1&gt;</code> is the highest level heading
+                            on a page.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q20: How do you add an image in HTML?</h3>
+                        <p><strong>Detailed Answer:</strong> Using the <code>&lt;img&gt;</code> tag with
+                            <code>src</code> (path) and <code>alt</code> (description) attributes. Example:
+                            <code>&lt;img src="pic.jpg" alt="Description"&gt;</code>.
+                        </p>
+                    </div>
+
+                    <!-- CATEGORY: ADVANCED & HTML5 -->
+                    <div
+                        style="border-bottom: 2px solid var(--border); margin-bottom: 2rem; padding-bottom: 1rem; margin-top: 4rem;">
+                        <span class="badge" style="background: #ef4444;">LEVEL: ADVANCED</span>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q21: What is the difference between SVG and Canvas?</h3>
+                        <p><strong>Detailed Answer:</strong> SVG is vector-based (XML) and stays sharp at any size.
+                            Canvas is pixel-based (bitmap) and better for high-performance graphics and games using
+                            JavaScript.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q22: What is the difference between async and defer in script tags?</h3>
+                        <p><strong>Detailed Answer:</strong> Both load scripts asynchronously. <code>async</code>
+                            executes the script immediately after download (blocking HTML), while <code>defer</code>
+                            waits until the HTML is fully parsed.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q23: What are 'data-' attributes?</h3>
+                        <p><strong>Detailed Answer:</strong> They allow you to store custom data private to the page or
+                            application inside standard HTML elements, which can then be easily accessed via JavaScript.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q24: What is the difference between LocalStorage and SessionStorage?</h3>
+                        <p><strong>Detailed Answer:</strong> Both store data in the browser. LocalStorage lasts forever
+                            (until cleared), while SessionStorage is cleared when the browser tab is closed.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q25: What is the purpose of the &lt;main&gt; tag?</h3>
+                        <p><strong>Detailed Answer:</strong> It identifies the primary unique content of a document. It
+                            should not contain sidebars, navigation links, or logos that are repeated across pages.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q26: What is a Web Worker?</h3>
+                        <p><strong>Detailed Answer:</strong> A script that runs in the background of a web page,
+                            allowing for heavy computations without freezing the main UI thread.</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q27: What is the purpose of the &lt;figure&gt; and &lt;figcaption&gt; tags?</h3>
+                        <p><strong>Detailed Answer:</strong> They are used to group media (like images) with a
+                            descriptive caption. This provides semantic structure and better context for accessibility.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q28: What is Responsive Web Design in the context of HTML?</h3>
+                        <p><strong>Detailed Answer:</strong> In HTML, this mainly involves using the
+                            <code>&lt;meta name="viewport" content="..."&gt;</code> tag and semantic structure that CSS
+                            can easily adapt to different screens.
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q29: What are WebSockets?</h3>
+                        <p><strong>Detailed Answer:</strong> An HTML5 technology that allows for a full-duplex
+                            communication channel between a browser and a server (perfect for real-time apps like
+                            chats).</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h3>Q30: What is the Geolocation API in HTML5?</h3>
+                        <p><strong>Detailed Answer:</strong> An API that allows the user to provide their location to
+                            the web application, enabling features like finding nearby stores or local weather.</p>
+                    </div>
+
+                    <div style="margin-bottom: 0;">
+                        <h3>Q31: What is ARIA in web development?</h3>
+                        <p><strong>Detailed Answer:</strong> ARIA (Accessible Rich Internet Applications) is a set of
+                            attributes that you can add to HTML elements to make them more accessible to people using
+                            assistive technologies like screen readers.</p>
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="cert-overlay" class="certificate-overlay">
+        <div id="name-prompt" class="cert-modal">
+            <span class="badge">FINAL STEP</span>
+            <h2>One Last Thing...</h2>
+            <p>To whom should we issue this professional certification?</p>
+            <input type="text" id="student-name" class="cert-input" placeholder="Enter Your Full Name"
+                autocomplete="off">
+            <button class="cta-button" onclick="generateCertificate()">Generate My Certificate</button>
+        </div>
+
+        <div id="certificate-wrapper" style="display:none; flex-direction: column; align-items: center;">
+            <div id="certificate-display">
+                <div class="cert-bg"></div>
+                <div class="cert-content">
+                    <div class="cert-header">Certificate of Completion</div>
+                    <div class="cert-title">WEB ARCHITECT</div>
+                    <div class="cert-statement">THIS IS TO OFFICIALLY CERTIFY THAT</div>
+                    <div id="display-name" class="cert-name">YOUR NAME HERE</div>
+                    <div class="cert-body">
+                        Has successfully completed <strong>The HTML Elite Masterclass: 2026 Edition</strong>.<br>
+                        They have demonstrated expert proficiency in Semantic HTML5, Advanced Forms,
+                        DOM Architecture, and modern Web Standards.
+                    </div>
+                    <div class="cert-footer">
+                        <div class="signature-box">
+                            <div style="font-family: serif; font-size: 1.2rem;">NextGenCode</div>
+                            <div style="font-size: 0.7rem; color: #888;">ISSUING AUTHORITY</div>
+                        </div>
+                        <div class="cert-logo">NextGen<span>Code</span></div>
+                        <div class="signature-box">
+                            <div style="font-family: serif; font-size: 1.2rem;"><i>Jan 2026</i></div>
+                            <div style="font-size: 0.7rem; color: #888;">DATE OF ISSUE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="cta-button download-cert-btn" onclick="downloadAsPNG()">Download Certificate (PNG)</button>
+            <p style="margin-top:1rem; color:rgba(255,255,255,0.5); font-size: 0.8rem;">Ready to share? Download your
+                high-quality PNG certificate now!</p>
+            <button class="cta-button"
+                style="margin-top: 1.5rem; background: transparent; border: 1px solid rgba(255,255,255,0.2);"
+                onclick="goHome()">Back to Masterclass Home 🏠</button>
+        </div>
+    </div>
+    </section>
+    </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 NextGen HTML Elite Masterclass. Built with &hearts; for developers.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
